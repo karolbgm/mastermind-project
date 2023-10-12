@@ -102,3 +102,102 @@ function checkEnableGuessBtn() {
 //if color is contained but not on the same position: white peg
 ////if color is contained and on the same position: black peg
 
+function feedback(feedbackList) {
+    const feedbackArr = [];
+    console.log(feedbackArr)
+
+
+    for (let i = 0; i < 4; i++) {
+        let randomIndex;
+
+
+        // Generate a random index that is not in feedbackArr
+        do {
+            randomIndex = Math.floor(Math.random() * 4);
+        } while (feedbackArr.includes(randomIndex));
+
+
+        feedbackArr.push(randomIndex);
+        let selectedSpace = feedbackList[randomIndex];
+        console.log(selectedSpace)
+        if (code_maker[i] === code_breaker[i]) {
+            selectedSpace.classList.add('blackPeg');
+        } else if (code_maker.includes(code_breaker[i])) {
+            selectedSpace.classList.add('whitePeg');
+        }
+    }
+}
+
+
+const feedbackList1 = document.querySelectorAll('.fb1');
+const feedbackList2 = document.querySelectorAll('.fb2');
+const feedbackList3 = document.querySelectorAll('.fb3');
+const feedbackList4 = document.querySelectorAll('.fb4');
+const feedbackList5 = document.querySelectorAll('.fb5');
+const feedbackList6 = document.querySelectorAll('.fb6');
+const feedbackList7 = document.querySelectorAll('.fb7');
+const feedbackList8 = document.querySelectorAll('.fb8');
+const feedbackList9 = document.querySelectorAll('.fb9');
+const feedbackList10 = document.querySelectorAll('.fb10');
+const feedbackList11 = document.querySelectorAll('.fb11');
+
+
+//When user clicks Guess, colored pegs will be displayed on board in specific guess number
+// let numberOfGuesses = 0;
+let numberOfGuesses = 11;
+const everyGuess = document.querySelectorAll('.guess')
+
+
+guessBtn.addEventListener('click', function () {
+    numberOfGuesses--; //starting at 11
+    if (numberOfGuesses === 10) {
+        feedbackList = feedbackList1
+    } else if (numberOfGuesses === 9) {
+        feedbackList = feedbackList2
+    } else if (numberOfGuesses === 8) {
+        feedbackList = feedbackList3
+    } else if (numberOfGuesses === 7) {
+        feedbackList = feedbackList4
+    } else if (numberOfGuesses === 6) {
+        feedbackList = feedbackList5
+    } else if (numberOfGuesses === 5) {
+        feedbackList = feedbackList6
+    } else if (numberOfGuesses === 4) {
+        feedbackList = feedbackList7
+    } else if (numberOfGuesses === 3) {
+        feedbackList = feedbackList8
+    } else if (numberOfGuesses === 2) {
+        feedbackList = feedbackList9
+    } else if (numberOfGuesses === 1) {
+        feedbackList = feedbackList10
+    } else if (numberOfGuesses === 0) {
+        feedbackList = feedbackList11
+    }
+    if (numberOfGuesses >= 0) {
+
+
+        everyGuess[numberOfGuesses].querySelector('#position1').style.backgroundColor = code_breaker[0];
+        everyGuess[numberOfGuesses].querySelector('#position2').style.backgroundColor = code_breaker[1];
+        everyGuess[numberOfGuesses].querySelector('#position3').style.backgroundColor = code_breaker[2];
+        everyGuess[numberOfGuesses].querySelector('#position4').style.backgroundColor = code_breaker[3];
+
+
+        feedback(feedbackList);
+    }
+});
+
+//Checking wins I'M HERE
+// If feedback grid is all black - user wins, else user guesses again
+//Computer selection is displayed on board
+
+
+
+
+//Restart option
+//Check current guess number
+//do not go over 11
+//If user does not guess correctly within the 11 tries, game is over and computer wins
+//Restart option
+//Feedback Grid
+//Each circle is going to correspond to a specific index position of a feedback array
+// const guess1 = [position1, position2, positon3, position4]
