@@ -3,6 +3,7 @@ body {
   height: 100vh;
   /* overflow: hidden; */
 }
+
 #computer-selection {
   height: 50px;
   /* height: 3.125em; */
@@ -12,6 +13,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
+
 .code-maker {
   margin: auto;
   background-color: black;
@@ -19,6 +21,7 @@ body {
   height: 40px;
   width: 40px;
 }
+
 #user-selection {
   height: 50px;
   width: 400px;
@@ -27,13 +30,15 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
-.code-braker {
+
+.code-breaker {
   margin: auto;
   background-color: black;
   border-radius: 50%;
   height: 40px;
   width: 40px;
 }
+
 .guesses {
   margin: auto;
   background-color: black;
@@ -41,6 +46,7 @@ body {
   height: 40px;
   width: 40px;
 }
+
 .guess {
   margin: 15px 0;
   height: 50px;
@@ -50,10 +56,12 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
+
 #allGuesses {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 #feedback1,
 #feedback2,
 #feedback3,
@@ -75,6 +83,7 @@ body {
   /* justify-content: space-evenly; */
   flex-wrap: wrap;
 }
+
 .fb1,
 .fb2,
 .fb3,
@@ -93,6 +102,7 @@ body {
   width: 20px;
   margin: 5px;
 }
+
 .blackPeg {
   background-color: rgb(0, 0, 0);
   border-radius: 50%;
@@ -100,6 +110,7 @@ body {
   width: 20px;
   margin: 5px;
 }
+
 .whitePeg {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
@@ -107,11 +118,13 @@ body {
   width: 20px;
   margin: 5px;
 }
+
 #container {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 #board {
   margin-left: 40%;
 }
