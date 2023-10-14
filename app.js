@@ -198,7 +198,8 @@ const codemakerPeg1 = document.querySelector('#position1.code-maker')
 const codemakerPeg2 = document.querySelector('#position2.code-maker')
 const codemakerPeg3 = document.querySelector('#position3.code-maker')
 const codemakerPeg4 = document.querySelector('#position4.code-maker')
-
+const popupMessage = document.querySelector('#pop-message')
+const popupBox = document.querySelector('.popup')
 function checkWin(allSelectedSpaces) {
     let correctPegs = 0;
     for (let element of allSelectedSpaces) {
@@ -208,13 +209,15 @@ function checkWin(allSelectedSpaces) {
     }
     if (numberOfGuesses === 0){
         if(correctPegs !== 4){
-            alert('Computer wins')
          displayAnswer()   
+         popupMessage.innerText = 'You lost!'
+         popupBox.style.visibility = 'visible'
         }
     }
     if (correctPegs === 4) {
-      alert("User wins");
-      displayAnswer()   
+      displayAnswer()
+      popupMessage.innerText = 'You won!'  
+      popupBox.style.visibility = 'visible' 
     }
   }
 
@@ -226,3 +229,4 @@ codemakerPeg2.style.backgroundColor = code_maker[1]
 codemakerPeg3.style.backgroundColor = code_maker[2]
 codemakerPeg4.style.backgroundColor = code_maker[3]
 }
+

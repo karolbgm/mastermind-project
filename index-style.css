@@ -1,0 +1,67 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#container{
+    position: relative;
+}
+#myVideo {
+    object-fit: contain;
+  }
+
+  #greet{
+    position: absolute;
+    border-radius: 30px;
+    font-size: 1em;
+    padding: 40px; 
+    top: 300px;
+    left: 580px;
+    width: 700px;
+    height: 390px;
+    background-color: rgba(250, 247, 247, 0.809);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  ul{
+    /* text-align: justify; */
+    font-size: 1.1em;
+  }
+
+  h1{
+    position: absolute;
+    font-family: 'Pirata One';
+    font-size: 7em; 
+    color: rgb(220, 191, 7);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* margin: auto; */
+    top: 0;
+    left: 650px;
+  }
+
+  button {
+    width: 250px;
+    /* height: 500px; */
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(255, 204, 0, 0.658);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(8, 8, 6);
+    color: white;
+}
+
+#ready{
+    margin-top: 0;
+}
