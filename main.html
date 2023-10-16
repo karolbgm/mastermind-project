@@ -1,242 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Pirata+One&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Mastermind Game</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <div id="board">
-        <div id="computer-selection">
-            <div class="code-maker" id="position1"></div>
-            <div class="code-maker" id="position2"></div>
-            <div class="code-maker" id="position3"></div>
-            <div class="code-maker" id="position4"></div>
-        </div>
+      <div id="computer-selection">
+        <div class="code-maker" id="position1"></div>
+        <div class="code-maker" id="position2"></div>
+        <div class="code-maker" id="position3"></div>
+        <div class="code-maker" id="position4"></div>
+      </div>
 
-
-        <div id="allGuesses">
-            <div id="container">
-
-
-                <div class="guess" id="guess11">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback11">
-                    <div class="fb11" id="position1"></div>
-                    <div class="fb11" id="position2"></div>
-                    <div class="fb11" id="position3"></div>
-                    <div class="fb11" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess10">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback10">
-                    <div class="fb10" id="position1"></div>
-                    <div class="fb10" id="position2"></div>
-                    <div class="fb10" id="position3"></div>
-                    <div class="fb10" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess9">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback9">
-                    <div class="fb9" id="position1"></div>
-                    <div class="fb9" id="position2"></div>
-                    <div class="fb9" id="position3"></div>
-                    <div class="fb9" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess8">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback8">
-                    <div class="fb8" id="position1"></div>
-                    <div class="fb8" id="position2"></div>
-                    <div class="fb8" id="position3"></div>
-                    <div class="fb8" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess7">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback7">
-                    <div class="fb7" id="position1"></div>
-                    <div class="fb7" id="position2"></div>
-                    <div class="fb7" id="position3"></div>
-                    <div class="fb7" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess6">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback6">
-                    <div class="fb6" id="position1"></div>
-                    <div class="fb6" id="position2"></div>
-                    <div class="fb6" id="position3"></div>
-                    <div class="fb6" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess5">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback5">
-                    <div class="fb5" id="position1"></div>
-                    <div class="fb5" id="position2"></div>
-                    <div class="fb5" id="position3"></div>
-                    <div class="fb5" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess4">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback4">
-                    <div class="fb4" id="position1"></div>
-                    <div class="fb4" id="position2"></div>
-                    <div class="fb4" id="position3"></div>
-                    <div class="fb4" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess3">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback3">
-                    <div class="fb3" id="position1"></div>
-                    <div class="fb3" id="position2"></div>
-                    <div class="fb3" id="position3"></div>
-                    <div class="fb3" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess2">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback2">
-                    <div class="fb2" id="position1"></div>
-                    <div class="fb2" id="position2"></div>
-                    <div class="fb2" id="position3"></div>
-                    <div class="fb2" id="position4"></div>
-                </div>
-            </div>
-            <div id="container">
-
-
-                <div class="guess" id="guess1">
-                    <div class="guesses" id="position1"></div>
-                    <div class="guesses" id="position2"></div>
-                    <div class="guesses" id="position3"></div>
-                    <div class="guesses" id="position4"></div>
-                </div>
-                <div id="feedback1">
-                    <div class="fb1" id="position1"></div>
-                    <div class="fb1" id="position2"></div>
-                    <div class="fb1" id="position3"></div>
-                    <div class="fb1" id="position4"></div>
-                </div>
-            </div>
+      <div id="allGuesses">
+        <div id="container">
+          <div class="guess" id="guess10">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback10">
+            <div class="fb10" id="position1"></div>
+            <div class="fb10" id="position2"></div>
+            <div class="fb10" id="position3"></div>
+            <div class="fb10" id="position4"></div>
+          </div>
         </div>
         <div id="container">
-            <div id="user-selection">
-                <div class="code-breaker" id="position1"></div>
-                <div class="code-breaker" id="position2"></div>
-                <div class="code-breaker" id="position3"></div>
-                <div class="code-breaker" id="position4"></div>
-            </div>
-            <button type="button" id="guessBtn" disabled>Guess</button>
-
-
+          <div class="guess" id="guess9">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback9">
+            <div class="fb9" id="position1"></div>
+            <div class="fb9" id="position2"></div>
+            <div class="fb9" id="position3"></div>
+            <div class="fb9" id="position4"></div>
+          </div>
         </div>
-        <input type="color" list="presetColors" id="firstInput">
-        <input type="color" list="presetColors" id="secondInput">
-        <input type="color" list="presetColors" id="thirdInput">
-        <input type="color" list="presetColors" id="fourthInput">
-        <datalist id="presetColors">
-            <option value="#ff0000" />
-            <option value="#00ff00" />
-            <option value="#0000ff" />
-            <option value="#ffff00"></option>
-        </datalist>
+        <div id="container">
+          <div class="guess" id="guess8">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback8">
+            <div class="fb8" id="position1"></div>
+            <div class="fb8" id="position2"></div>
+            <div class="fb8" id="position3"></div>
+            <div class="fb8" id="position4"></div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="guess" id="guess7">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback7">
+            <div class="fb7" id="position1"></div>
+            <div class="fb7" id="position2"></div>
+            <div class="fb7" id="position3"></div>
+            <div class="fb7" id="position4"></div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="guess" id="guess6">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback6">
+            <div class="fb6" id="position1"></div>
+            <div class="fb6" id="position2"></div>
+            <div class="fb6" id="position3"></div>
+            <div class="fb6" id="position4"></div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="guess" id="guess5">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback5">
+            <div class="fb5" id="position1"></div>
+            <div class="fb5" id="position2"></div>
+            <div class="fb5" id="position3"></div>
+            <div class="fb5" id="position4"></div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="guess" id="guess4">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback4">
+            <div class="fb4" id="position1"></div>
+            <div class="fb4" id="position2"></div>
+            <div class="fb4" id="position3"></div>
+            <div class="fb4" id="position4"></div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="guess" id="guess3">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback3">
+            <div class="fb3" id="position1"></div>
+            <div class="fb3" id="position2"></div>
+            <div class="fb3" id="position3"></div>
+            <div class="fb3" id="position4"></div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="guess" id="guess2">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback2">
+            <div class="fb2" id="position1"></div>
+            <div class="fb2" id="position2"></div>
+            <div class="fb2" id="position3"></div>
+            <div class="fb2" id="position4"></div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="guess" id="guess1">
+            <div class="guesses" id="position1"></div>
+            <div class="guesses" id="position2"></div>
+            <div class="guesses" id="position3"></div>
+            <div class="guesses" id="position4"></div>
+          </div>
+          <div id="feedback1">
+            <div class="fb1" id="position1"></div>
+            <div class="fb1" id="position2"></div>
+            <div class="fb1" id="position3"></div>
+            <div class="fb1" id="position4"></div>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <div id="user-selection">
+          <div class="code-breaker" id="position1"></div>
+          <div class="code-breaker" id="position2"></div>
+          <div class="code-breaker" id="position3"></div>
+          <div class="code-breaker" id="position4"></div>
+        </div>
+        <button type="button" id="guessBtn" disabled>CHECK</button>
+      </div>
     </div>
-
-<div class="popup">
-  <h2>GAME OVER</h2>
-  <p id="pop-message"></p>
-  <button>PLAY AGAIN</button> 
-</div>
-</body>
-
-
+    <div id="colorChoice">
+      <p>
+        Click on a color peg to select a color, then click on the position in
+        the check row where you want to place it.
+      </p>
+      <div id="container">
+        <div class="colors-container">
+          <div class="colors" id="position1"></div>
+          <div class="colors" id="position2"></div>
+          <div class="colors" id="position3"></div>
+          <div class="colors" id="position4"></div>
+          <div class="colors" id="position5"></div>
+          <div class="colors" id="position6"></div>
+        </div>
+      </div>
+    </div>
+    <button id="instructions">INSTRUCTIONS</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Instructions:</h3>
+        <ul>
+          <li>
+            The castle's secrets are locked behind a code. Your task is to
+            decipher it using the colorful pegs on the game board.
+          </li>
+          <li>
+            Feedback is provided for each guess:
+            <p>Black pegs: Correct color in the correct position</p>
+            <p>White pegs: Correct color in the wrong position.</p>
+          </li>
+          <li>You have 10 attempts.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup">
+      <h2>GAME OVER</h2>
+      <p id="pop-message"></p>
+      <input
+        type="button"
+        value="PLAY AGAIN"
+        onClick="window.location.reload(true)"
+      />
+    </div>
+  </body>
 </html>
-
-<!-- <div class="popup">
-  <h2>GAME OVER</h2>
-  <p id="pop-message"></p>
-  <button>PLAY AGAIN</button> 
-</div> -->
-

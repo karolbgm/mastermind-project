@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Pirata+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index-style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index-style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <video autoplay muted loop id="myVideo">
-            <source src="assets/castle.mp4" type="video/mp4">
-          </video>
-          <h1>CASTLE OF CODES</h1>
-    <div id="greet">
-        <h3>Welcome to the Castle of Codes! You've been chosen to solve the enigmatic code hidden within these ancient walls.</h3>
+      <video autoplay muted loop id="myVideo">
+        <source src="assets/castle.mp4" type="video/mp4" />
+      </video>
+      <h1>CASTLE OF CODES</h1>
+      <div id="greet">
+        <h3>
+          Welcome to the Castle of Codes! You've been chosen to solve the
+          enigmatic code hidden within these ancient walls.
+        </h3>
 
-            <h3>Instructions:</h3>
-            <ul>
-                <li>The castle's secrets are locked behind a code. Your task is to decipher it using the colorful pegs on the game board.</li>
-                <li>Feedback is provided for each guess:
-                    <p>Black pegs: Correct color in the correct position</p>
-                    <p>White pegs: Correct color in the wrong position.</p>
-                </li>
-                <li>You have 11 attempts.</li>
-            </ul>
-            <h3 id="ready">Are you ready for the challenge?</h3>
-            <button id="startGame">START GAME</button>
-        </div>
+        <h3>Instructions:</h3>
+        <ul>
+          <li>
+            The castle's secrets are locked behind a code. Your task is to
+            decipher it using the colorful pegs on the game board.
+          </li>
+          <li>
+            Feedback is provided for each guess:
+            <p>Black pegs: Correct color in the correct position</p>
+            <p>White pegs: Correct color in the wrong position.</p>
+          </li>
+          <li>You have 10 attempts.</li>
+        </ul>
+        <h3 id="ready">Are you ready for the challenge?</h3>
+        <button id="startGame">START GAME</button>
+      </div>
     </div>
     <script>
-        // Add an event listener to the start event
-        document.getElementById("startGame").addEventListener("click", function (event) {
-                window.location.href = "main.html";
+      // Add an event listener to the start event
+      document
+        .getElementById("startGame")
+        .addEventListener("click", function (event) {
+          window.location.href = "main.html";
         });
     </script>
-</body>
+  </body>
 </html>
