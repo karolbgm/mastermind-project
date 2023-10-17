@@ -175,10 +175,6 @@
       </div>
     </div>
     <div id="colorChoice">
-      <p>
-        Click on a color peg to select a color, then click on the position in
-        the check row where you want to place it.
-      </p>
       <div id="container">
         <div class="colors-container">
           <div class="colors" id="position1"></div>
@@ -190,22 +186,39 @@
         </div>
       </div>
     </div>
-    <button id="instructions">INSTRUCTIONS</button>
+    <button id="instructions">HOW TO PLAY</button>
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h3>Instructions:</h3>
+
+        The castle hides a powerful and coveted magical sphere deep within its
+        walls. Legends say that this sphere possesses unimaginable powers. Only
+        the cleverest code breakers can reveal the code guarding this mystical
+        artifact.
         <ul>
           <li>
-            The castle's secrets are locked behind a code. Your task is to
-            decipher it using the colorful pegs on the game board.
+            Objective: Break the castle's code within 10 turns to unveil the
+            magical sphere.
           </li>
           <li>
-            Feedback is provided for each guess:
-            <p>Black pegs: Correct color in the correct position</p>
-            <p>White pegs: Correct color in the wrong position.</p>
+            Gameplay:
           </li>
-          <li>You have 10 attempts.</li>
+          <ol>
+            <li>Click on a color peg to choose a color.</li>
+            <li>Click on the desired position in the check row to place it.</li>
+            <li>
+              Receive feedback from the castle:
+              <ul>
+                <li>A black keypeg: Correct color, correct position.</li>
+                <li>A white key peg: Correct color, wrong position.</li>
+                <li>No key peg: Wrong color.</li>
+              </ul>
+            </li>
+            <li>
+              Continue to guess and adapt your strategy to uncover the code.
+            </li>
+          </ol>
         </ul>
       </div>
     </div>
@@ -220,3 +233,8 @@
     </div>
   </body>
 </html>
+
+<!-- p>
+        Click on a color peg to select a color, then click on the position in
+        the check row where you want to place it.
+      </p> -->

@@ -16,11 +16,11 @@ body{
     position: absolute;
     border-radius: 30px;
     font-size: 1em;
-    padding: 40px; 
-    top: 300px;
-    left: 580px;
-    width: 700px;
-    height: 390px;
+    padding: 15px; 
+    top: 350px;
+    left: 650px;
+    width: 600px;
+    height: 250px;
     background-color: rgba(250, 247, 247, 0.809);
     color: black;
     display: flex;
@@ -29,7 +29,9 @@ body{
     align-items: center;
   }
 
-
+h3{
+  text-align: center;
+}
 
   ul{
     /* text-align: justify; */
@@ -45,6 +47,16 @@ body{
     /* margin: auto; */
     top: 0;
     left: 650px;
+  }
+  h2{
+    position: absolute;
+    font-family: 'Pirata One';
+    font-size: 4em; 
+    color: rgb(220, 191, 7);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* margin: auto; */
+    top: 140px;
+    left: 750px;
   }
 
   button {
