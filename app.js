@@ -67,26 +67,43 @@ function checkEnableGuessBtn() {
 function feedback(feedbackList) {
   const feedbackArr = [];
   const allSelectedSpaces = [];
+  let code_maker_copy = code_maker.slice();
+
 
   for (let i = 0; i < 4; i++) {
-    let randomIndex;
 
+
+    let randomIndex;
     // Generate a random index that is not in feedbackArr
     do {
       randomIndex = Math.floor(Math.random() * 4);
     } while (feedbackArr.includes(randomIndex));
 
+
     feedbackArr.push(randomIndex);
     let selectedSpace = feedbackList[randomIndex];
     allSelectedSpaces.push(selectedSpace);
-    if (code_maker[i] === code_breaker[i]) {
-      selectedSpace.classList.add("blackPeg");
-    } else if (code_maker.includes(code_breaker[i])) {
-      selectedSpace.classList.add("whitePeg");
+    if (code_breaker[i] === code_maker_copy[i]) {
+      selectedSpace.classList.add('blackPeg');
+      code_maker_copy[i] = 'z';
+    }
+  }
+  for (let i = 0; i < 4; i++) {
+    for (let j = 0; j < 4; j++) {
+      if (code_breaker[i] === code_maker_copy[j]) {
+        // Make sure it's not already marked as black peg
+        if (!allSelectedSpaces[i].classList.contains('blackPeg')) {
+          allSelectedSpaces[i].classList.add('whitePeg');
+          code_maker_copy[j] = 'z';
+          break; // Optional, if you want each code_breaker[i] to match only once.
+        }
+      }
     }
   }
   checkWin(allSelectedSpaces);
 }
+
+
 
 const feedbackList1 = document.querySelectorAll(".fb1");
 const feedbackList2 = document.querySelectorAll(".fb2");

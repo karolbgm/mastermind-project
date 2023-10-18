@@ -3,7 +3,7 @@ body {
   height: 100vh;
   background: url("assets/insidecastle.jpg") no-repeat;
   overflow: hidden;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -268,3 +268,363 @@ img {
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+
+@media (max-width: 576px) {
+  /* // here for small screens */
+  body{
+    width: 200px;
+  }
+  #instructions{
+    font-size: 10px;
+    width: 100px;
+    padding: 15px;
+  }
+
+.code-maker,
+.code-breaker,
+.guesses,
+.colors {
+  height: 2em;
+  width: 2em;
+}
+
+#feedback1,
+#feedback2,
+#feedback3,
+#feedback4,
+#feedback5,
+#feedback6,
+#feedback7,
+#feedback8,
+#feedback9,
+#feedback10,
+#feedback11 {
+ 
+  width: 4em;
+  height: 3.3em;
+ 
+}
+
+.fb1,
+.fb2,
+.fb3,
+.fb4,
+.fb5,
+.fb6,
+.fb7,
+.fb8,
+.fb9,
+.fb10,
+.fb11 {
+  background-color: rgb(77, 79, 80);
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 5px;
+}
+#allGuesses {
+  margin: 0px auto;
+}
+#colorChoice {
+  position: absolute;
+  margin-left: -500px;
+}
+#board {
+  margin-left:px;
+  background-color: rgba(116, 67, 35, 0.745);
+  width: 10px;
+  margin-top: 0px;
+}
+.guess {
+  margin: 0;
+  height: 2.8em;
+  width: 20em;
+}
+.modal-content {
+  font-size: 0.8em;
+}
+}
+  @media (max-width: 768px) {
+  /* //here for tablets */
+  #instructions{
+    font-size: 10px;
+    padding: 15px;
+  }
+
+  .code-maker,
+.code-breaker,
+.guesses,
+.colors {
+  height: 2em;
+  width: 2em;
+}
+
+#feedback1,
+#feedback2,
+#feedback3,
+#feedback4,
+#feedback5,
+#feedback6,
+#feedback7,
+#feedback8,
+#feedback9,
+#feedback10,
+#feedback11 {
+ 
+  width: 4em;
+  height: 3.3em;
+ 
+}
+
+.fb1,
+.fb2,
+.fb3,
+.fb4,
+.fb5,
+.fb6,
+.fb7,
+.fb8,
+.fb9,
+.fb10,
+.fb11 {
+  background-color: rgb(77, 79, 80);
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 5px;
+}
+#allGuesses {
+  margin: 0px auto;
+}
+#colorChoice {
+  margin-left: 60px;
+}
+#board {
+  margin-left: 15%;
+  background-color: rgba(116, 67, 35, 0.745);
+  width: 400px;
+  margin-top: 50px;
+}
+.guess {
+  margin: 0;
+  height: 2.8em;
+  width: 20em;
+}
+.modal-content {
+  font-size: 0.8em;
+}
+  }
+  @media (max-width: 992px) {
+  /* // here for small computers */
+  #instructions{
+    font-size: 10px;
+    padding: 15px;
+  }
+
+  .code-maker,
+.code-breaker,
+.guesses,
+.colors {
+  height: 2em;
+  width: 2em;
+}
+
+#feedback1,
+#feedback2,
+#feedback3,
+#feedback4,
+#feedback5,
+#feedback6,
+#feedback7,
+#feedback8,
+#feedback9,
+#feedback10,
+#feedback11 {
+ 
+  width: 4em;
+  height: 3.3em;
+ 
+}
+
+.fb1,
+.fb2,
+.fb3,
+.fb4,
+.fb5,
+.fb6,
+.fb7,
+.fb8,
+.fb9,
+.fb10,
+.fb11 {
+  background-color: rgb(77, 79, 80);
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 5px;
+}
+#allGuesses {
+  margin: 0px auto;
+}
+#colorChoice {
+  margin-left: 200px;
+}
+#board {
+  margin-left: 25%;
+  background-color: rgba(116, 67, 35, 0.745);
+  width: 400px;
+  margin-top: 50px;
+}
+.guess {
+  margin: 0;
+  height: 2.8em;
+  width: 20em;
+}
+.modal-content {
+  font-size: 0.8em;
+}
+  }
+  @media (max-width: 1200px) {
+  /* // medium computers */
+  #instructions{
+    font-size: 12px;
+    /* padding: 15px; */
+    margin: 5px 5px;
+  }
+
+  .code-maker,
+.code-breaker,
+.guesses,
+.colors {
+  height: 2em;
+  width: 2em;
+}
+
+#feedback1,
+#feedback2,
+#feedback3,
+#feedback4,
+#feedback5,
+#feedback6,
+#feedback7,
+#feedback8,
+#feedback9,
+#feedback10,
+#feedback11 {
+ 
+  width: 4em;
+  height: 3.3em;
+ 
+}
+
+.fb1,
+.fb2,
+.fb3,
+.fb4,
+.fb5,
+.fb6,
+.fb7,
+.fb8,
+.fb9,
+.fb10,
+.fb11 {
+  background-color: rgb(77, 79, 80);
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 5px;
+}
+#allGuesses {
+  margin: 0px auto;
+}
+#colorChoice {
+  margin-left: 310px;
+}
+#board {
+  margin-left: 30%;
+  background-color: rgba(116, 67, 35, 0.745);
+  width: 400px;
+  margin-top: 50px;
+}
+.guess {
+  margin: 0;
+  height: 2.8em;
+  width: 20em;
+}
+.modal-content {
+  font-size: 0.8em;
+}
+  }
+  @media (max-width: 1400px) {
+  /* // large computers */
+  #instructions{
+    font-size: 13px;
+    padding: 15px;
+  }
+
+  .code-maker,
+.code-breaker,
+.guesses,
+.colors {
+  height: 2em;
+  width: 2em;
+}
+
+#feedback1,
+#feedback2,
+#feedback3,
+#feedback4,
+#feedback5,
+#feedback6,
+#feedback7,
+#feedback8,
+#feedback9,
+#feedback10,
+#feedback11 {
+ 
+  width: 4em;
+  height: 3.3em;
+ 
+}
+
+.fb1,
+.fb2,
+.fb3,
+.fb4,
+.fb5,
+.fb6,
+.fb7,
+.fb8,
+.fb9,
+.fb10,
+.fb11 {
+  background-color: rgb(77, 79, 80);
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 5px;
+}
+#allGuesses {
+  margin: 0px auto;
+}
+#colorChoice {
+  margin-left: 440px;
+  margin-top: 0;
+  position: fixed;
+}
+#board {
+  margin-left: 35%;
+  background-color: rgba(116, 67, 35, 0.745);
+  width: 400px;
+  margin-top: 80px;
+}
+.guess {
+  margin: 0;
+  height: 2.8em;
+  width: 20em;
+}
+.modal-content {
+  font-size: 0.8em;
+}
+  }
