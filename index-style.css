@@ -1,79 +1,222 @@
-body{
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
-#container{
-    position: relative;
+#container {
+  position: relative;
 }
 #myVideo {
-    object-fit: contain;
-  }
-
-  #greet{
-    position: absolute;
-    border-radius: 30px;
-    font-size: 1em;
-    padding: 15px; 
-    top: 350px;
-    left: 650px;
-    width: 600px;
-    height: 250px;
-    background-color: rgba(250, 247, 247, 0.809);
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-h3{
+  object-fit: cover;
+}
+#greet {
+  position: absolute;
+  border-radius: 30px;
+  font-size: 1em;
+  font-family: "Inter", sans-serif;
+  padding: 1%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 31%;
+  height: 23%;
+  background-color: rgba(250, 247, 247, 0.809);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
   text-align: center;
 }
-
-  ul{
-    /* text-align: justify; */
-    font-size: 1.1em;
-  }
-
-  h1{
-    position: absolute;
-    font-family: 'Pirata One';
-    font-size: 7em; 
-    color: rgb(220, 191, 7);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    /* margin: auto; */
-    top: 0;
-    left: 650px;
-  }
-  h2{
-    position: absolute;
-    font-family: 'Pirata One';
-    font-size: 4em; 
-    color: rgb(220, 191, 7);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    /* margin: auto; */
-    top: 140px;
-    left: 750px;
-  }
-
-  button {
-    width: 250px;
-    /* height: 500px; */
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgba(255, 204, 0, 0.658);
-    font-size: 1em;
-    font-weight: bold;
+h1 {
+  position: absolute;
+  font-family: "Pirata One";
+  font-size: 7em;
+  color: rgb(220, 191, 7);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
+h2 {
+  position: absolute;
+  font-family: "Pirata One";
+  font-size: 4em;
+  color: rgb(220, 191, 7);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  width: 95%;
+  padding: 1.8%;
+  border-radius: 30px;
+  font-size: 1em;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  background: #a791e4;
+}
 button:hover {
-    background-color: rgb(8, 8, 6);
-    color: white;
+  background: #7a5ccc;
 }
 
-#ready{
-    margin-top: 0;
-}
+@media (min-width: 360px) and (max-width: 576px){
+  /* here for small screens */
+  #myVideo{
+    width: 100%;
+    height: 100%;
+    position: fixed; /*it covers the entire viewport and stays in place */
+    top: 0;
+    left: 0;
+  }
+  h1 {
+    font-size: 3em;
+    top: 200px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5em;
+    top: 280px;
+    text-align: center;
+  }
+  #greet {
+    font-size: 0.8em;
+    top: 530px;
+    width: 300px;
+    height: 250px;
+  }
+  button{
+    padding: 15px;
+    font-size: 1.2em;
+  }
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+  /* here for tablets */
+  #myVideo{
+    width: 100%;
+    height: 100%;
+    position: fixed; /*it covers the entire viewport and stays in place */
+    top: 0;
+    left: 0;
+  }
+  h1 {
+    font-size: 3em;
+    top: 200px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2em;
+    top: 250px;
+    text-align: center;
+  }
+  #greet {
+    font-size: 0.8em;
+    top: 500px;
+    width: 400px;
+    height: 250px;
+  }
+  button{
+    padding: 15px;
+    font-size: 1.2em;
+  }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+  /* here for small computers */
+  #myVideo{
+    width: 100%;
+    height: 100%;
+    position: fixed; /*it covers the entire viewport and stays in place */
+    top: 0;
+    left: 0;
+  }
+  h1 {
+    font-size: 4em;
+    top: 180px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.5em;
+    top: 260px;
+    text-align: center;
+  }
+  #greet {
+    font-size: 0.8em;
+    top: 530px;
+    width: 500px;
+    height: 250px;
+  }
+  button{
+    padding: 15px;
+    font-size: 1.2em;
+  }
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    /* medium computers */
+    #myVideo{
+      width: 100%;
+      height: 100%;
+      position: fixed; /*it covers the entire viewport and stays in place */
+      top: 0;
+      left: 0;
+    }
+    h1 {
+      font-size: 5em;
+      top: 150px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 3em;
+      top: 230px;
+      text-align: center;
+    }
+    #greet {
+      font-size: 0.9em;
+      top: 530px;
+      width: 500px;
+      height: 250px;
+    }
+    button{
+      padding: 15px;
+      font-size: 1.2em;
+    }
+    }
+
+ 
+  @media (min-width: 1200px) and (max-width: 1400px) {
+  /* large computers */
+  #myVideo{
+    width: 100%;
+    height: 100%;
+    position: fixed; /*it covers the entire viewport and stays in place */
+    top: 0;
+    left: 0;
+  }
+  h1 {
+    font-size: 6em;
+    top: 100px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3em;
+    top: 200px;
+    text-align: center;
+  }
+  #greet {
+    font-size: 1em;
+    top: 500px;
+    width: 550px;
+    height: 250px;
+  }
+  button{
+    padding: 8px;
+    font-size: 1.2em;
+  }
+  }
