@@ -171,6 +171,7 @@ const codemakerPeg3 = document.querySelector("#position3.code-maker");
 const codemakerPeg4 = document.querySelector("#position4.code-maker");
 const popupMessage = document.querySelector("#pop-message");
 const popupBox = document.querySelector(".popup");
+const winScreen = document.querySelector("#videoContainer")
 function checkWin(allSelectedSpaces) {
   let correctPegs = 0;
   for (let element of allSelectedSpaces) {
@@ -181,16 +182,15 @@ function checkWin(allSelectedSpaces) {
   if (numberOfGuesses === 0) {
     if (correctPegs !== 4) {
       displayAnswer();
-      popupMessage.innerText = "You lost!";
+      popupMessage.innerText = "You failed.";
       popupBox.style.visibility = "visible";
       guessBtn.disabled = true;
     }
   }
   if (correctPegs === 4) {
     displayAnswer();
-    popupMessage.innerText = "You won!";
-    popupBox.style.visibility = "visible";
     guessBtn.disabled = true;
+    winScreen.style.visibility = "visible"
   }
 }
 
@@ -228,3 +228,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+
+//Buttons event listeners
