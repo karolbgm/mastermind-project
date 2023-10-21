@@ -49,7 +49,8 @@ The "Castle of Codes" is a digital adaptation of the classic board game, Masterm
 [Github.com](https://github.com/karolbgm/mastermind-project)
     
 ## Works Cited:
-* N/A
+* Background videos from https://www.shutterstock.com/
+* Background image from https://www.shutterstock.com/
 
 ## <a name="author"></a>About The Author
 I am a passionate software engineer with a flair for transformation. In my previous career as a chemical engineer and administrative assistant I honed my adaptability and attention to detail to solve problems. I orchestrate efficiency in any role I take on and as a Full Stack Software Engineer, I blend creativity and precision to build digital solutions that bridge borders and cultures.
