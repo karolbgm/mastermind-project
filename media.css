@@ -1,0 +1,327 @@
+/* @media (max-width: 1400px) {
+  #board {
+    top: 70%;
+    left: 70%;
+    width: auto;
+  }
+
+  #computer-selection,
+  #user-selection {
+    height: 70px;
+    width: 80%;
+  }
+
+  .code-maker,
+  .code-breaker,
+  .guesses,
+  .colors {
+    height: 60px;
+    width: 60px;
+  }
+
+  .guess {
+    height: 60px;
+    width: 500px;
+  }
+
+  .feedback {
+    width: 80px;
+    height: 70px;
+  }
+
+  .fb1,
+  .fb2,
+  .fb3,
+  .fb4,
+  .fb5,
+  .fb6,
+  .fb7,
+  .fb8,
+  .fb9,
+  .fb10 {
+    height: 1.5em;
+    width: 1.5em;
+    margin: 5px;
+  }
+
+  #guessBtn {
+    height: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #board {
+    top: 80%;
+    left: 90%;
+    width: auto;
+  }
+
+  #computer-selection,
+  #user-selection {
+    height: 70px;
+    width: 80%;
+  }
+
+  .code-maker,
+  .code-breaker,
+  .guesses,
+  .colors {
+    height: 70px;
+    width: 70px;
+  }
+
+  .guess {
+    height: 75px;
+    width: 600px;
+  }
+
+  .feedback {
+    width: 90px;
+    height: 80px;
+  }
+
+  .fb1,
+  .fb2,
+  .fb3,
+  .fb4,
+  .fb5,
+  .fb6,
+  .fb7,
+  .fb8,
+  .fb9,
+  .fb10 {
+    height: 1.6em;
+    width: 1.6em;
+    margin: 7px;
+  }
+
+  #guessBtn {
+    height: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  #board {
+    top: 100%;
+    left: 100%;
+    width: auto;
+  }
+} */
+
+
+
+
+
+@media (min-width: 390px) and (max-width: 600px){
+    body{
+      background: rgba(223, 222, 241, 0.439);
+    }
+    .popup {
+      width: 1000px;
+      height: 500px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3.5em;
+    }
+    
+    .popup button {
+      font-size: 1em;
+      padding: 18px;
+    }
+    
+    .modal-content {
+      font-size: 2em;
+      width: 50%; 
+    }
+  
+    #board {
+      width: auto;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    #computer-selection,
+    #user-selection {
+      height: 130px;
+      width: 80%;
+    }
+  
+    .code-maker,
+    .code-breaker,
+    .guesses,
+    .colors {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .guess {
+      height: 150px;
+      width: 1000px;
+    }
+  
+    .feedback {
+      width: 160px;
+      height: 160px;
+    }
+  
+    .fb1,
+    .fb2,
+    .fb3,
+    .fb4,
+    .fb5,
+    .fb6,
+    .fb7,
+    .fb8,
+    .fb9,
+    .fb10 {
+      height: 3.5em;
+      width: 3.5em;
+      margin: 10px;
+    }
+  
+    #guessBtn {
+      height: 130px;
+      font-size: 3em;
+    }
+    .guess {
+      margin: 20px 0;
+    }
+    .colors-container {
+      height: 10em;
+      width: 60em;
+    }
+  
+    #colorChoice {
+      width: 1000px;
+    }
+  
+    #instructions,
+    #newGame,
+    #restartGame {
+      width: 300px;
+      margin: 15px;
+      padding: 35px;
+      font-size: 2em;
+    }
+  
+    .allButtons {
+      width: auto;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 710px) {
+    body{
+      background: rgba(223, 222, 241, 0.439);
+    }
+    .popup {
+      width: 1000px;
+      height: 500px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3.5em;
+    }
+    
+    .popup button {
+      font-size: 1em;
+      padding: 18px;
+    }
+    
+    .modal-content {
+      font-size: 2em;
+      width: 50%; 
+    }
+    #board {
+      width: 1160px;
+      height: 1700px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #computer-selection,
+    #user-selection {
+      height: 120px;
+      width: 80%;
+    }
+  
+    .code-maker,
+    .code-breaker,
+    .guesses,
+    .colors {
+      height: 100px;
+      width: 100px;
+    }
+    .guess {
+      height: 110px;
+      width: 928px;
+    }
+  
+    .feedback {
+      width: 165px;
+      height: 140px;
+    }
+  
+    .fb1,
+    .fb2,
+    .fb3,
+    .fb4,
+    .fb5,
+    .fb6,
+    .fb7,
+    .fb8,
+    .fb9,
+    .fb10 {
+      height: 3em;
+      width: 3em;
+      margin: 10px;
+    }
+  
+    #guessBtn {
+      height: 120px;
+      font-size: 3em;
+    }
+    .guess {
+      margin: 20px 0;
+    }
+    .colors-container {
+      height: 10em;
+      width: 60em;
+      margin-top: 200px;
+    }
+  
+    #colorChoice {
+      width: 1000px;
+    }
+  
+    #instructions,
+    #newGame,
+    #restartGame {
+      width: 300px;
+      margin: 15px;
+      padding: 35px;
+      font-size: 2em;
+    }
+  
+    .allButtons {
+      width: auto;
+    }
+  }
+  
+  /* @media (min-width: 768px) {
+    //here for tablets
+    }
+    @media (min-width: 992px) {
+    // here for small computers
+    }
+    @media (min-width: 1200px) {
+    // medium computers
+    }
+    @media (min-width: 1400px) {
+    // large computers
+    } */
