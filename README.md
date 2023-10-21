@@ -37,17 +37,16 @@ The "Castle of Codes" is a digital adaptation of the classic board game, Masterm
 
 
 ## <a name="nextsteps"></a>Project Next Steps
-* Allow users to customize the number of pegs for the secret code, providing more flexibility in board size.
-* Implement responsive design with Media Queries.
-* Introduce a scoring system and the ability to play multiple rounds.
-* Work on incorporating multiplayer features, enabling players to compete or collaborate with others.
+* Allow users to customize the number of pegs for the secret code, providing more flexibility in board size
+* Implement responsive design with Media Queries
+* Introduce a scoring system and the ability to play multiple rounds
+* Work on incorporating multiplayer features, enabling players to compete or collaborate with others
 
 ## <a name="deployment"></a>Deployed Link
-[Netlify](https://karolbgm.github.io/mastermind-project/)
+[Mastermind Game](https://karolbgm.github.io/mastermind-project/)
 
 * You can view the repository:
-[Github.com](https://github.com/Gr8ness21/joosPodcast)
-* If unable to view please go live locally through VS Code
+[Github.com](https://github.com/karolbgm/mastermind-project)
     
 ## Works Cited:
 * N/A
