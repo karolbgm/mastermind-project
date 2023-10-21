@@ -4,7 +4,7 @@
 <img src="assets/mainpage.png" alt="Main Page Screen"/>
 
 ## Description
-The "Castle of Codes" is a digital adaptation of the classic board game, Mastermind, where your goal is to crack a hidden color code within a limited number of tries. Put your logical thinking and deduction abilities to the test in this entertaining game.
+The "Castle of Codes" is a digital adaptation of the classic board game, Mastermind, where your goal is to crack a hidden color code within a limited number of tries. Put your logical thinking and deduction abilities to the test in this game.
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)

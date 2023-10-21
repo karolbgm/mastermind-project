@@ -19,7 +19,7 @@ const color3 = colors[Math.floor(Math.random() * 6)];
 const color4 = colors[Math.floor(Math.random() * 6)];
 const code_maker = [color1, color2, color3, color4];
 
-//User will select colors from a dropdown color menu for each of the 4 holes
+//User will select colors from a color menu for each of the 4 holes
 
 //Once user completes all holes, they will be able to submit guess/Guess will be saved to an user array
 
@@ -95,7 +95,7 @@ function feedback(feedbackList) {
         if (!allSelectedSpaces[i].classList.contains('blackPeg')) {
           allSelectedSpaces[i].classList.add('whitePeg');
           code_maker_copy[j] = 'z';
-          break; // Optional, if you want each code_breaker[i] to match only once.
+          break; // if I want each code_breaker[i] to match only once.
         }
       }
     }
@@ -118,7 +118,7 @@ const feedbackList10 = document.querySelectorAll(".fb10");
 
 //When user clicks Guess, colored pegs will be displayed on board in specific guess number
 
-// let numberOfGuesses = 0;
+// let numberOfGuesses = 10;
 
 let numberOfGuesses = 10;
 const everyGuess = document.querySelectorAll(".guess");
@@ -162,7 +162,7 @@ guessBtn.addEventListener("click", function () {
 
 //Checking wins
 // If feedback grid is all black - user wins, else user guesses again
-//If user does not guess correctly within the 11 tries, game is over and computer wins
+//If user does not guess correctly within the 10 tries, game is over and computer wins
 //Computer selection is displayed on board
 
 const codemakerPeg1 = document.querySelector("#position1.code-maker");
@@ -224,7 +224,8 @@ span.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target == modal) { //If the clicked element is the same as the modal, it means the user clicked inside the modal, and no action is taken.
+
     modal.style.display = "none";
   }
 };
