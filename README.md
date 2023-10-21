@@ -30,7 +30,7 @@ The "Castle of Codes" is a digital adaptation of the classic board game, Masterm
 <img src="assets/wireframe.png" alt="Original Sketch"/>
 
 ## Trello Planning
-* All planning in Trello.
+* [Trello Board](https://trello.com/b/sVKYwSkT/mastermind-project)
 
 ## <a name="design"></a>Design
 * Design elements implemented using HTML5 and CSS3. 
