@@ -1,27 +1,17 @@
-html{
-  background: url("assets/insidecastle.jpg") no-repeat center;
-  /* background: pink; */
-  background-size: cover;
-  /* overflow: hidden; */ 
-}
 body {
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
-  /* background: url("assets/insidecastle.jpg") no-repeat center/cover; */
   background: url("assets/insidecastle.jpg") no-repeat center;
-  /* background: pink; */
   background-size: cover;
   /* overflow: hidden; */
 }
 
 #board {
   position: absolute;
-  /* margin-left: 38%; */
   background-color: rgba(255, 255, 255, 0.774);
   width: 500px;
-  /* margin-top: 50px; */
   border-radius: 32px;
   top: 50%;
   left: 50%;
@@ -195,7 +185,7 @@ body {
   padding: 20px;
   border: 1px solid #888;
   border-radius: 32px;
-  width: 30%; /* Could be more or less, depending on screen size */
+  width: 30%;
 }
 
 /* The Close Button */
@@ -328,4 +318,3 @@ body {
 #newGame2:hover {
   background: #7a5ccc;
 }
-

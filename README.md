@@ -20,13 +20,13 @@ The "Castle of Codes" is a digital adaptation of the classic board game, Masterm
 * CSS3
 
 ## Features
-* The computer generates a secret code.
-* You attempt to guess the code within a limited number of turns.
-* Black pegs indicate correct color and position.
-* White pegs indicate correct color but wrong positio.
+* The computer generates a secret code
+* You attempt to guess the code within a limited number of turns
+* Black pegs indicate correct color and position
+* White pegs indicate correct color but wrong position
 
 ## Whiteboard Images
-*Original Whiteboard sketch
+* Original Whiteboard sketch
 <img src="assets/wireframe.png" alt="Original Sketch"/>
 
 ## Trello Planning

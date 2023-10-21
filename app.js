@@ -124,7 +124,7 @@ let numberOfGuesses = 10;
 const everyGuess = document.querySelectorAll(".guess");
 
 guessBtn.addEventListener("click", function () {
-  numberOfGuesses--; //starting at 11
+  numberOfGuesses--; //starting at 10
   if (numberOfGuesses === 9) {
     feedbackList = feedbackList1;
   } else if (numberOfGuesses === 8) {
@@ -228,6 +228,3 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-
-
-//Buttons event listeners
